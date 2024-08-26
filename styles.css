@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0a0a23;
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+}
+
+.neon-title {
+    font-size: 3em;
+    color: #ff4e50;
+    text-shadow: 0 0 20px #ff4e50, 0 0 30px #ff4e50, 0 0 40px #ff4e50, 0 0 50px #ff4e50;
+    margin-bottom: 20px;
+}
+
+.handi-container {
+    position: relative;
+}
+
+.handi-image, .butter-image {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.butter-image {
+    animation: dropButter 2s ease-in-out forwards;
+}
+
+@keyframes dropButter {
+    0% { transform: translateY(-200px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.neon-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    text-shadow: 0 0 5px #ff4e50, 0 0 10px #ff4e50;
+    box-shadow: 0 0 15px #ff4e50, 0 0 20px #ff4e50;
+}
+
+.neon-button:hover {
+    background-color: #ff4e50;
+    color: #000;
+    box-shadow: 0 0 25px #ff4e50, 0 0 30px #ff4e50;
+}
+
+#exitButton {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.hidden {
+    display: none;
+}
+
+.neon-message {
+    font-size: 2em;
+    margin-top: 30px;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #888;
+}
